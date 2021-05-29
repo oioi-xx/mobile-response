@@ -50,6 +50,7 @@
     .description2{display: none}
     .moblie-timeline{display: block}
     .moblie-timeline h4{margin-top: 100px;}
+    .circle2{ left:33%;}
 }
 
 
@@ -59,8 +60,10 @@
 	 .intro-title h2{font-size: 50px;}
      .description1 p{line-height: 190%; width: 350px; }
         .about-top{height: 320px}
-    .cl_bg{ width: 160px; height: 160px;margin-left: 30px; }
+    .cl_bg{ width: 160px; height: 160px;margin-left: 90px; }
      .moblie-timeline h4{margin-top: 50px;}
+    .about-bottom{border:none;}
+    .circle2{ left:32%;}
 
     
 }
@@ -79,7 +82,7 @@
      .intro-img .img-box{height: 250px;}
     .description1 p{line-height: 190%; width: 280px; }
     .about-top{height: 280px}
-    .cl_bg{ width: 140px; height: 140px;margin-left: 30px;     margin-top: 100px;}
+    .cl_bg{ width: 140px; height: 140px; }
     .moblie-timeline h4{margin-top: 20px;}
     .section-title h2{left:70%}
 
