@@ -28,6 +28,7 @@
 
 @media screen and (max-width:320px) {
 	 .intro-title h2{font-size: 40px;}
+     .intro-img .img-box{height: 325px;}
 
     
 }
