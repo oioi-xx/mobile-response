@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+
+@media screen and (max-width:1023px) {
+    #header,
+	#header .container{height: 84px;}
+    .text-wrap{float: left; padding: 50px 10%}
+}
+
+
+    
+@media screen and (max-width:900px) {
+
+    .dumy-img{display: none}
+    .intro-title h2{font-size: 80px;}
+    .header-wrap{padding-top: 5px;}
+    .toggle span{width: 21px}
+    .logo img{width: 70%}
+
+}
+	
+
+@media screen and (max-width:500px) {
+	 .intro-title h2{font-size: 50px;}
+
+    
+}
+
+@media screen and (max-width:320px) {
+	 .intro-title h2{font-size: 40px;}
+
+    
+}
