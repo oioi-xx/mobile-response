@@ -27,9 +27,9 @@
 }
 
 
-@media screen and (max-width:410px) {
+@media screen and (max-width:460px) {
 	 .intro-title h2{font-size: 40px;}
-     .intro-img .img-box{height: 325px;}
+     .intro-img .img-box{height: 300px;}
 
     
 }
@@ -37,7 +37,4 @@
 
 @media screen and (max-width:320px) {
 	 .intro-title h2{font-size: 40px;}
-     .intro-img .img-box{height: 325px;}
-
-    
 }
