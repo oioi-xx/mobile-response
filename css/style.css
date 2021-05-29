@@ -13,7 +13,6 @@
 }
 
 
-
 @font-face{
     font-family:"Orelo-bold";
     src:url('../fonts/Orelo Standard/Orelo Standard Bold.otf');
@@ -29,9 +28,10 @@
     src:url('../fonts/Orelo Standard/Orelo Standard Heavy italic.otf');
 }
 
-.scrollDisable{width:100%; min-width:100%; overflow:hidden !important; touch-action:none;}
 
-body{max-width:100%;height:auto; background: #fff;  -ms-overflow-style: none; } ::-webkit-scrollbar { display: none;}
+
+body{max-width:100%;height:auto; background: #fff;overflow-x: hidden;
+  -ms-overflow-style: none; } ::-webkit-scrollbar { display: none; }
 /* 전체 공통속성 */
 #wrap{width: 100%; margin: 0 auto;}
 .container{width: 1140px; margin: 0 auto;/* background: rgba(0, 0, 0, 0.25);*/ height: 100%}
