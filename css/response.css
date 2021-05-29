@@ -9,14 +9,15 @@
 @media screen and (max-width:1300px){
     .profile_img{ right:10%}
     .profile_bg{display: none}
-     .about-img{display: none}
+    .about-img{display: none}
+    .about-bottom{width: 100%;}
+    
 }
 
 @media screen and (max-width:1023px) {
     #header,
 	#header .container{height: 84px;}
     .text-wrap{float: left; padding: 50px 10%}
-    .description1 p{line-height: 160%; width: 700px}
     .about-bottom{height: 100%}
 }
 
@@ -38,19 +39,20 @@
     .section-title h2{font-size: 80px;}
     .about-txt{margin-right: 50px;}
     .cl_bg{margin-left: 38px;  width: 190px; height:190px; }
-    .description1 p{line-height: 160%; width: 500px}
+    .description1 p{line-height: 160%; }
 }
 	
 
 @media screen and (max-width:550px){
     .section-title h2{font-size: 40px;}
-    .cl_bg{ width: 170px; height: 170px; margin-left: 90px;}
-    .description1 p{line-height: 190%; width: 450px; box-sizing: border-box;  text-align: center;}
+    .cl_bg{ width: 170px; height: 170px; }
     .about-top{height: 400px}
     .description2{display: none}
     .moblie-timeline{display: block}
     .moblie-timeline h4{margin-top: 100px;}
     .circle2{ left:33%;}
+    #section2{justify-content: center; align-items: center; justify-items: center}
+    
 }
 
 
@@ -60,7 +62,7 @@
 	 .intro-title h2{font-size: 50px;}
      .description1 p{line-height: 190%; width: 350px; }
         .about-top{height: 320px}
-    .cl_bg{ width: 160px; height: 160px;margin-left: 90px; }
+    .cl_bg{ width: 160px; height: 160px;}
      .moblie-timeline h4{margin-top: 50px;}
     .about-bottom{border:none;}
     .circle2{ left:32%;}
