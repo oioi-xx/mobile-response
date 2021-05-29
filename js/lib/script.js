@@ -1,6 +1,9 @@
 
 
 $(document).ready(function(){
+    
+      AOS.init();
+    
     // Declare the animation container and parameter to be used in the animation
 var animContainer = document.getElementById('modal-nav-overlay');
 // The animation data exported from Adobe After Effects
@@ -30,6 +33,7 @@ anim.setDirection(-1);
 //add click listener to the button
 close.addEventListener("click", function() {
 
+
 // if the menu is closed, play the animation and open it
   if (anim.playDirection == -1){
     anim.setDirection(1);
@@ -37,6 +41,7 @@ close.addEventListener("click", function() {
     anim.addEventListener("complete", function() {
       body.classList.remove("close")
       body.classList.add("open")
+
     });
   }
 
@@ -49,6 +54,7 @@ close.addEventListener("click", function() {
     anim.addEventListener("complete", function() {
       body.classList.remove("open")
       body.classList.add("close")
+        
     });
   }
 });

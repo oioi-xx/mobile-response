@@ -1,36 +1,42 @@
 @charset "utf-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 @font-face{
     font-family:"Orelo-standard";
-    src:url(../fonts/Orelo Standard/Orelo Standard.otf);
+    src:url('../fonts/Orelo Standard/Orelo Standard.otf' );
 }
 
 @font-face{
+    font-family:"Shang";
+    src:url('../fonts/ShangShouYanHeiTi/ShangShouYanHeiTi-2.ttf');
+}
+
+
+
+@font-face{
     font-family:"Orelo-bold";
-    src:url(../fonts/Orelo Standard/Orelo Standard Bold.otf);
+    src:url('../fonts/Orelo Standard/Orelo Standard Bold.otf');
 }
 
 @font-face{
     font-family:"Orelo-extra-bold";
-    src:url(../fonts/Orelo Standard/Orelo Standard Heavy.otf);
+    src:url('../fonts/Orelo Standard/Orelo Standard Heavy.otf');
 }
 
 @font-face{
     font-family:"Orelo-extra-bold-italic";
-    src:url(../fonts/Orelo Standard/Orelo Standard Heavy italic.otf)
+    src:url('../fonts/Orelo Standard/Orelo Standard Heavy italic.otf');
 }
 
 
-
-
-body{background: red;max-width:100%;height:auto}
+body{max-width:100%;height:auto; background: #fff;  -ms-overflow-style: none; } ::-webkit-scrollbar { display: none;}
 /* 전체 공통속성 */
 #wrap{width: 100%; margin: 0 auto;}
-.container{width: 1140px}
-section{width: 100%; height: 970px;}
-section:nth-child(1){background: #ff8b8b; }
-section:nth-child(2){background: #93b0ff; }
+.container{width: 1140px; margin: 0 auto;/* background: rgba(0, 0, 0, 0.25);*/ height: 100%}
+section{width: 100%; height: 970px; position: relative}
+section:nth-child(1){background: #fff; }
+section:nth-child(2){background: #fff; }
 section:nth-child(3){background: #e6ffa1; }
 section:nth-child(4){background: #ffacef; }
 section:nth-child(5){background: #cdc7ff; }
@@ -42,14 +48,14 @@ footer{width: 100%; height: 300px; background: #000;}
 .logo img{ width: 100%}
 
 /*menu*/
-.modal-menu {height:100%; width:100%; background: yellow; top: 0; left: 0; z-index:3; box-sizing: border-box}
+
 .modal-menu ul {list-style-type: none;padding-left: 0;font-size: 2em;letter-spacing: 12px;line-height: 2em;}
 .modal-menu li {transition: all 0.75s ease;text-transform: uppercase;}
 .modal-menu li:hover {transform: scale(1.1);}
-.modal-menu a {text-decoration: none;color: #cb4ea6;transition: all 1s ease;cursor: pointer;}
+.modal-menu a {text-decoration: none;color: #222222;transition: all 1s ease;cursor: pointer;  font-family:"Orelo-bold";}
 .modal-menu a:hover {outline: none;color: #2d3132;}
-#modal-nav-overlay {position: fixed;width: 100%;height: 100%;display: block;overflow: hidden;transform: translate3d(0, 0, 0);text-align: center;opacity: 1;z-index: 2; overflow: hidden}
-#menu {transition: opacity 0.25s ease 0.25s, color 0.2s, transform 0.2s;opacity: 1;margin: -13px 16px;line-height: 0.25em;font-size: 2em;color: #cb4ea6;border: none;background: none;position: fixed;top: 0em;right: 0em;padding: 50px;z-index: 1;}
+#modal-nav-overlay {position: fixed;width: 100%;height: 100%;display: block;overflow: hidden;transform: translate3d(0, 0, 0);text-align: center;opacity: 1;z-index: 2;}
+#menu {transition: opacity 0.25s ease 0.25s, color 0.2s, transform 0.2s;opacity: 1;margin: -13px 16px;line-height: 0.25em;font-size: 2em;color: #000;border: none;background: none;position: fixed;top: 0em;right: 0em;padding: 50px;z-index: 1;}
 .open #menu {opacity: 0;}
 .close #menu {opacity: 1;}
 #x-btn {transition: opacity 0.25s ease 0.1s, color 0.2s, transform 0.2s;opacity: 0;border: none;background: none;position: fixed;top: 0.5em;right: 0.5em;font-size: 1.5em;padding: 50px;cursor: pointer;z-index: 3;}
@@ -57,13 +63,11 @@ footer{width: 100%; height: 300px; background: #000;}
 .close #x-btn { opacity: 0;}
 #x-btn:focus {outline: none;transform: scale(1.1);}
 #x-btn:hover {transform: scale(1.2);}
-.modal {position: absolute;top: 0;left: 0;width: 100%;height: 100%;display: flex;justify-content: center;align-items: center;flex-direction: column;z-index: 2;}
-.modal__content {opacity: 0;transform: scale(0.8) translate3D(0, -20px, 0);transition: opacity 0.2s, transform 0.8s cubic-bezier(0.09, 0.52, 0.25, 1);text-align: center;display: flex;align-items: center;flex-direction: column;padding: 1em;}
+.modal {position: fixed;top: 0;left: 0;width: 100%;height: 970px;display: flex;justify-content: center;align-items: center;flex-direction: column;z-index: 2; overflow: hidden}
+.modal__content {opacity: 0;transform: scale(0.8) translate3D(0, -20px, 0);transition: opacity 0.2s, transform 0.8s cubic-bezier(0.09, 0.52, 0.25, 1);text-align: center;display: flex;align-items: center;flex-direction: column;padding: 1em; position: fixed}
 .modal h1 {text-transform: uppercase;letter-spacing: 0.4em;}
 .modal p {max-width: 25em;line-height: 1.9;}
 .open .modal__content {opacity: 1;transform: scale(1) translate3D(0, 0, 0);}
-
-
 
 
 /*section1*/
@@ -71,31 +75,42 @@ footer{width: 100%; height: 300px; background: #000;}
 .intro-img{width: 100%; overflow: hidden}
 .intro-img .img-box{width: 90%; height: 425px; background: url(../img/header_bg.png) 100%; display: block;float: right; margin-top: 161px;}
 .intro-img .img-box h2{display: block; }
-.intro-title{width: 100%;}
-.intro-title h2{width: 90%; font-size: 144px; float: right; line-height: 50%;}
+.intro-title{width: 100%;transition: all .5s}
+.intro-title h2{width: 90%; font-size: 130px; float: right; line-height: 50%;font-family:"Orelo-standard"; color:#111}
+.intro-title h2 span{font-family:"Orelo-extra-bold-italic"; color:#111}
 .intro-text{width: 90%; overflow: hidden; display: block; padding-top: 20px;}
-.text-wrap{float: right; padding: 50px 0 20px}
+.text-wrap{float: right; padding: 50px 0 20px;font-family: 'Noto Sans', sans-serif;}
 .intro-text h3{font-size: 9px;margin-bottom: 5px; display: block; font-weight: bold;
-margin-bottom: 10px;}
-.intro-text h4{font-size: 18px;font-style: italic;display: block;}
+margin-bottom: 10px;color:#888}
+.intro-text h4{font-size: 18px;font-style: italic;display: block;color:#000}
 .dumy-img{width: 100%; position: absolute;top:200px; right: 10%}
 .dumy-img img{ display: block; float: right}
+img.infinite_rotating_logo{position: absolute;left: -10%;top:10%;animation:rotate 10s linear infinite;transform-origin: 50% 50%;}
+@keyframes rotate{ 100% {transform: rotate(360deg);}}
 
 
+#section2{overflow: hidden}
+.about-img{width: 450px; height: 610px; background: url(../img/header_bg.png) 100%; position: absolute; z-index: 2; ;left: 5%; display: block; bottom: 0}
+.about-top{background: #fff; width: 100%; height: 483px; display: block} 
+.cl_bg{ width: 250px; height: 250px; background: transparent; border: 1px solid #000; border-radius: 100%; display: flex; justify-content: center; align-items: center; flex-direction: column; float: left;margin-top: 150px;position: absolute;}
+.cl_bg h4{ font-family:"Shang"; font-size: 64px; color: #222}
+.circle1{ z-index: 9;background: #fff;}
+.circle2{position: absolute; left:30%; z-index: 9}
+.section-title h2{font-family:"Orelo-extra-bold-italic"; color:#111; font-size: 130px; position: absolute; left: 50%; transform: translateX(-50%); text-align: right;z-index: 8; top:50px}
+.profile{width: 216px; height: 295px; background: red; border: 1px solid #000; border-radius: 100%; display: flex; justify-content: center; align-items: center; flex-direction: column; float: right;margin-top: 100px; }
+.profile_img{position: absolute; right:25%; background: url(../img/Group%206.jpg)100%/100%;}
+.profile_bg { background: url(../img/header_bg.png) 100%}
+.about-bottom{width: 1110px; height: 380px; background: #fff; border: 1px solid #000; padding: 38px; box-sizing: border-box; position: absolute; z-index: 3}
+.about-bottom2{width: 1110px; height: 380px; background: #fff; border: 1px solid #000; position: absolute; top:53%; left:21.5%; z-index: 1}
+.description1 p{line-height: 160%; width: 980px}
+.description2{display: flex;}
+.about-txt{margin-right: 140px;}
+.description2 h4{font-family:"Orelo-extra-bold-italic"; color:#111; font-size: 40px; margin-top: 30px; margin-bottom: 40px;}
+.description2 ul > li a{font-size: 12px; margin-bottom: 10px; font-family: 'Noto-Sans';}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.moblie-timeline{display: none}
+.moblie-timeline h4{font-family:"Orelo-extra-bold-italic"; color:#111; font-size: 20px; margin-top: 0px; margin-bottom: 0px;}
+.moblie-timeline li a{font-size: 10px;}
 
 
 
