@@ -2,6 +2,13 @@
 
 $(document).ready(function(){
     
+    {$('body').addClass('scrollDisable').on('scroll touchmove mousewheel', function (e) {
+          e.preventDefault();});}
+
+      function scrollAble() {
+          $('body').removeClass('scrollDisable').off('scroll touchmove mousewheel');
+      }
+    
       AOS.init();
     
     // Declare the animation container and parameter to be used in the animation
